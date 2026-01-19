@@ -1,0 +1,24 @@
+{
+  "name": "entravel_testtask",
+  "version": "1.0.0",
+  "private": true,
+  "description": "API and UI test automation for Shopping Cart app",
+  "scripts": {
+    "test": "playwright test",
+
+    "test:api": "playwright test --grep @api",
+    "test:ui": "playwright test --grep @ui",
+
+    "test:smoke": "playwright test --grep @smoke",
+    "test:negative": "playwright test --grep @negative",
+
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^10.2.0",
+    "@playwright/test": "^1.57.0"
+  }
+}
